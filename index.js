@@ -39,7 +39,7 @@ function Character(data){
 
 function getDiceRollArray(diceCount){
   const result = new Array(diceCount).fill(0).map(() => {
-    return (Math.floor(Math.random() * 6) + 1)
+    return Math.floor(Math.random() * 6) + 1
   })
   console.log(result)
   return result
